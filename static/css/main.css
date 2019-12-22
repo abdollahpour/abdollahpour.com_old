@@ -1,0 +1,76 @@
+* {
+    line-height: 2em;
+}
+@media screen and (max-width: 1000px) {
+    body {
+        padding: 3em;
+    }
+    h1 {
+        font-size: 1.5em;
+        border-bottom: 1px solid #CCC;
+        margin-bottom: 1em;
+    }
+    h2 {
+        font-size: 1.2em;
+        color: rgb(51, 50, 83);
+    }
+}
+@media screen and (min-width: 1000px) {
+    body {
+        background-color: #EEE;
+    }
+    .container {
+        width: 570px;
+        margin: auto;
+        background: white;
+        padding: 40px 40px 40px 350px;
+        border: 1px solid #DDD;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        box-shadow: 4px 4px 1px #DDD;
+    }
+    @media print {
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            border: 0;
+            margin: 0;
+            box-shadow: 0 0 0 white;
+        }
+        @page {
+            padding: 0;
+            margin: 20mm;
+        }
+    }
+    h1, h2 {
+        font-size: 20px;
+        text-align: right;
+        width: 20em;
+        margin-left: -22em;
+        color: #2a7ab9;
+        position: relative;  
+    }
+    h1::after {
+        content: "";
+        border-top: #999 1px solid;
+        left: 430px;
+        width: 630px;
+        margin-top: 20px;
+        position: absolute;
+    }
+    h2 {
+        font-size: 18px;
+        margin-bottom: -50px;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+    img {
+        width: 200px;
+        float: left;
+        margin-left: -230px;
+    }
+}
